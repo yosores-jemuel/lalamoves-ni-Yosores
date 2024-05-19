@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap">
+        <link rel="stylesheet" href="styles.css">
+        <title>Website Ni Jemuel</title>
+    </head>
+<body>
+    <header>
+        <nav>
+            <div class="nav__content">
+                <div class="logo"><a href="#">JY</a></div>
+                <input type="checkbox" id="check" class="checkbox">
+                <label for="check" class="checkbox"><i class="fa-solid fa-bars"></i></label>
+                <ul>
+                    <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="portfolio.html"><i class="fa fa-briefcase"></i> Portfolio</a></li>
+                    <li><a href="blog.html"><i class="fa fa-pencil"></i> Blog</a></li>
+                    <li><a href="resume.html"><i class="fa fa-file-text-o"></i> Resume</a></li>
+                    <li><a href="services.html"><i class="fa fa-cogs"></i> Services</a></li>
+                    <li><a href="testimonials.html"><i class="fa-solid fa-comments-o"></i> Testimonials</a></li>
+                    <li><a href="faq.html"><i class="fa fa-question-circle"></i> FAQ</a></li>
+                </ul>
+                <a href="#" class="action_btn">Get Started</a>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="header">
+            <div class="img-area">
+                <img src="imgpogi.jpg" alt="">
+            </div>
+            <h1>Jemuel Yosores</h1>
+            <h3>Full-stack wed Developer</h3>
+        </div>
+
+        <div class="main">
+            <div class="left">
+                <h2>Personal Info.</h2>
+                <p><strong>Name:</strong>Jemuel Yosores</p>
+                <p><strong>Age:</strong>22</p>
+                <p><strong>Email:</strong>jemuel.yosores@jmc.edu.ph</p>
+                <p><strong>Phone:</strong>09094080282</p>
+                <h2>Skills</h2>
+                <ul>
+                    <li>Web Developer</li>
+                    <li>Editor</li>
+                    <li>Photo Grapher</li>
+                </ul>
+                <h2>Education</h2>
+                <h3>B.Sc in Computer Programming </h3>
+                <p> Jose Maria Collage Foundation Inc. 2023-2024</p>
+            </div>
+            <div class="right">
+                <h2>Work Experiences</h2>
+                <h3>YouTube</h3>
+                <p><strong>Position:</strong>Software Developer</p>
+                <p><strong>Duration:</strong>2023-2024</p>
+                <ul>
+                    <li>Developed and integrated software solutions to enhance the functionality 
+                        and user experience of our YouTube channel, including custom scripts and tools 
+                        for video editing, automation, and analytics.</li>
+                    <li>Led the integration of machine learning models into YouTube's content moderation 
+                        system, enhancing the platform's ability to detect and remove harmful content.</li>
+                </ul><br>
+                <h3>Jollibee</h3>
+                <p><strong>Position:</strong>Service Crew</p>
+                <p><strong>Duration:</strong>2021-2023</p>
+                <ul>
+                    <li>Maintained cleanliness and sanitation standards in the dining area, kitchen, and restrooms.</li>
+                    <li>Prepared and served food and beverages according to Jollibee's quality and safety standards.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
+     <footer class="footer">
+        <div class="footer__icons">
+            <i class="ri-facebook-box-fill"></i>
+            <i class="ri-instagram-fill"></i>
+            <i class="ri-phone-fill"></i>
+        </div>
+        <div class="footer__contact">
+            <p>You can contact me on social media or by phone.</p>
+        </div>
+    </footer>
+</body>
+</html>

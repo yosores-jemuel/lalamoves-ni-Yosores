@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <title>Website Ni Jemuel</title>
+</head>
+<body background="white">
+    <header>
+        <nav>
+            <div class="nav__content">
+                <div class="logo"><a href="#">JY</a></div>
+                <input type="checkbox" id="check" class="checkbox">
+                <label for="check" class="checkbox"><i class="fa-solid fa-bars"></i></label>
+                <ul>
+                    <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="portfolio.html"><i class="fa fa-briefcase"></i> Portfolio</a></li>
+                    <li><a href="blog.html"><i class="fa fa-pencil"></i> Blog</a></li>
+                    <li><a href="resume.html"><i class="fa fa-file-text-o"></i> Resume</a></li>
+                    <li><a href="services.html"><i class="fa fa-cogs"></i> Services</a></li>
+                    <li><a href="testimonials.html"><i class="fa-solid fa-comments-o"></i> Testimonials</a></li>
+                    <li><a href="faq.html"><i class="fa fa-question-circle"></i> FAQ</a></li>
+                </ul>
+                <a href="#" class="action_btn">Get Started</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="index">
+            <div class="section__container">
+                <div class="content">
+                    <div class="subtitle">Hello, Welcome to My Website</div>
+                    <div class="title">I am <span>Jemuel Yosores</span>, a Beginner Website Developer</div>
+                    <div class="description">
+                        I specialize in creating dynamic and responsive websites. With a passion for coding and a keen eye for design, I aim to develop websites that not only look great but also provide an exceptional user experience. Explore my portfolio to see my projects and learn more about my journey in web development.
+                    </div>
+                    <div class="action__btns">
+                        <button class="hire__me">Hire Me</button>
+                        <a href="portfolio.html" class="view__portfolio">View Portfolio</a>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="imgpogi1.jpg" alt="Profile Picture">
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
+    <footer class="footer">
+        <div class="footer__icons">
+            <i class="ri-facebook-box-fill"></i>
+            <i class="ri-instagram-fill"></i>
+            <i class="ri-phone-fill"></i>
+        </div>
+        <div class="footer__contact">
+            <p>You can contact me on social media or by phone.</p>
+        </div>
+    </footer>
+</body>
+</html>

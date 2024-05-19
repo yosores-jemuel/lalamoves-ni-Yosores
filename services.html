@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap">
+        <link rel="stylesheet" href="styles.css">
+        <title>Website Ni Jemuel</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="nav__content">
+                    <div class="logo"><a href="#">JY</a></div>
+                    <input type="checkbox" id="check" class="checkbox">
+                    <label for="check" class="checkbox"><i class="fa-solid fa-bars"></i></label>
+                    <ul>
+                        <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                        <li><a href="portfolio.html"><i class="fa fa-briefcase"></i> Portfolio</a></li>
+                        <li><a href="blog.html"><i class="fa fa-pencil"></i> Blog</a></li>
+                        <li><a href="resume.html"><i class="fa fa-file-text-o"></i> Resume</a></li>
+                        <li><a href="services.html"><i class="fa fa-cogs"></i> Services</a></li>
+                        <li><a href="testimonials.html"><i class="fa-solid fa-comments-o"></i> Testimonials</a></li>
+                        <li><a href="faq.html"><i class="fa fa-question-circle"></i> FAQ</a></li>
+                    </ul>
+                    <a href="#" class="action_btn">Get Started</a>
+                </div>
+            </nav>
+        </header>
+    
+        <div class="sectioon">
+            <div class="tittle">
+                <h1>Our Services</h1>
+            </div>
+            <div class="servicees">
+                <div class="cards">
+                    <div class="iconss">
+                        <i class="fas fa-calendar"></i>
+                    </div>
+                    <h2>Planning</h2>
+                    <p>Our planning service helps you conceptualize your project from the ground up. We work closely with you to understand your vision, goals, and requirements to create a comprehensive plan that sets the stage for a successful project.</p>
+                    <a href="" class="buttons">Read More</a>
+                </div>
+                <div class="cards">
+                    <div class="iconss">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <h2>Renovation</h2>
+                    <p>Our renovation service transforms your existing spaces into beautiful and functional areas. We manage the entire renovation process, from initial design to final construction, ensuring quality workmanship and attention to detail.</p>
+                    <a href="" class="buttons">Read More</a>
+                </div>
+                <div class="cards">
+                    <div class="iconss">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h2>Support</h2>
+                    <p>Our support service provides ongoing assistance and maintenance for your projects. We offer various support options to ensure your projects continue to run smoothly and effectively long after the initial implementation.</p>
+                    <a href="" class="buttons">Read More</a>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const toggleBtnIcon = document.querySelector('.toggle_btn i')
+            const dropDownMenu = document.querySelector('.dropdown_menu')
+    
+            toggleBtn.onclick = function () {
+                dropDownMenu.classList.toggle('open')
+                const isOpen = dropDownMenu.classList.contains('open')
+    
+                toggleBtnIcon.classList = isOpen
+                    ? 'fa-solid fa-xmark'
+                    : 'fa-solid fa-bars'
+            }
+        </script>
+        <footer class="footer">
+            <div class="footer__icons">
+                <i class="ri-facebook-box-fill"></i>
+                <i class="ri-instagram-fill"></i>
+                <i class="ri-phone-fill"></i>
+            </div>
+            <div class="footer__contact">
+                <p>You can contact me on social media or by phone.</p>
+            </div>
+        </footer>
+    </body>
+</html>
